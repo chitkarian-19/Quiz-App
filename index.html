@@ -1,0 +1,140 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+h1
+{
+	 margin: 10px 0 30px 0;
+    letter-spacing: 5px;      
+    font-size: 40px;
+	background-color:#4CAF50;
+	opacity:0.9;
+	color:white;
+	padding:20px;
+}
+p
+{
+    font: 400 25px/1.8 Lato, sans-serif;
+    color: #777;
+}
+div
+{
+     width:60%;
+	 height:350px;
+	 border:1px solid black;
+	 border-radius:10px;
+	 padding:20px;
+	 margin:20px 20px 20px 10px;
+	 align:center;
+}
+button
+{
+    height:100px;
+    width:200px;
+    border-radius:10px;	
+	font-size:30px;
+}
+</style>
+<script>
+var cnt=0;
+  $(document).ready(function(){
+     $("input").click(function(){
+	   var str=this.value;
+	   if(str=="a")
+	     cnt=cnt+100;
+		else if(str=="b")
+		  cnt=cnt+80;
+		  else if(str=="c")
+		   cnt=cnt+60;
+		   else if(str=="d")
+		    cnt=cnt+40;
+	 });
+	 $("button").click(function(){
+	    cnt=(cnt/1000)*100;
+		 if(cnt>80)
+		 alert("your startup is going to be successful surely,the chances are very high");
+		 else if(cnt>60)
+		 alert("your startup is nearly going to be successful");
+		 else if(cnt>40)
+		 alert("your startup might be successful");
+		 else
+		  alert("your startup might not be successful");
+		 
+	 });
+  });
+  </script>
+  </head>
+  <body>
+  <h1><center>Quiz to suggest the probability of STARTUP success</center></h1>
+  <div>
+  <p>1.How may members your startup is having??</p><br><br>
+  <input type="radio" value="a">20-30</input><br><br>
+  <input type="radio" value="b">10-20</input><br><br>
+  <input type="radio" value="c">5-10</input><br><br>
+  <input type="radio" value="d">d</input></br><br>
+  </div>
+   <div>
+  <p>2.How many money are you going to invest??</p><br><br>
+  <input type="radio" value="a"> >=5-10 Lakhs</input><br><br>
+  <input type="radio" value="b"> >=1-5 Lakhs</input><br><br>
+  <input type="radio" value="c"> >= 3-5 Lakhs</input><br><br>
+  <input type="radio" value="d"> >= 1 Lakhs</input></br>
+  </div>
+  <div>
+   <p>3.What is the main aim of startup ?</p><br><br>
+  <input type="radio" value="a">Serve the Nation</input><br><br>
+  <input type="radio" value="b">To earn a good Livelihood</input><br><br>
+  <input type="radio" value="c">To have a good profile in society</input><br><br>
+  <input type="radio" value="d">Just for an experiment</input></br><br><br>
+  </div>
+  <div>
+   <p>4.Have you started any startup before or was the part of any ?</p><br>
+  <input type="radio" value="a">You were the part of any MNC</input><br><br>
+  <input type="radio" value="b">You were the part of any Startup</input><br><br>
+  <input type="radio" value="c">You created my own startup</input><br><br>
+  <input type="radio" value="d">No you are going to organize a startup for the first time</input></br><br>
+  </div>
+  <div>
+   <p>5.Is the startup going to help the poor peoples and the needy ones??</p><br><br>
+  <input type="radio" value="a">Yes</input><br><br>
+  <input type="radio" value="b">Yes but not directly</input><br><br>
+  <input type="radio" value="c">NO</input></br><br><br>
+  </div>
+  <div>
+   <p>6.Is the startup environment freindly?</p><br><br>
+  <input type="radio" value="a">Yes</input><br><br>
+  <input type="radio" value="b">Yes in some way</input><br><br>
+  <input type="radio" value="c">NO</input></br><br>
+  </div>
+  <div>
+   <p>7.Do you require funds for the startup?</p><br><br>
+  <input type="radio" value="a">No</input><br><br>
+  <input type="radio" value="b">Yes but partially</input><br><br>
+  <input type="radio" value="c">Yes</input><br>
+  </div>
+  <div>
+   <p>8.If you have to collaborate with some Corporate Company ,which would you prefer?</p><br>
+  <input type="radio" value="a">MNC's</input><br><br>
+  <input type="radio" value="b">Government Organizations</input><br><br>
+  <input type="radio" value="c">Startups</input><br><br>
+  <input type="radio" value="d">None</input></br><br>
+  </div>
+  <div>
+   <p>9.Do you believe in achieving high</p><br><br>
+  <input type="radio" value="a">Yes</input><br><br>
+  <input type="radio" value="b">No</input><br><br>
+  <input type="radio" value="c">Yes,somehow</input><br><br>
+  </div>
+  <div>
+   <p>10.Who is your ideal</p><br>
+  <input type="radio" value="a">Steve Jones</input><br><br>
+  <input type="radio" value="b">Marks Zuckberg</input><br><br>
+  <input type="radio" value="c">Alibaba Founder</input><br><br>
+  <input type="radio" value="d">None</input></br><br><br>
+  </div>
+  
+ <center> <a href="Register.html"><button class="w3-btn w3-yellow w3-border">Score</button></a><br>  </center>
+  </body>
+  </html>
